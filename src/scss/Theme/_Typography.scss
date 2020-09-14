@@ -1,0 +1,189 @@
+
+// Grouped Styles
+h1,h2,h3{ margin: 0 0 1rem 0; font-family: $FontFamilyHeader;}
+p,span,a,blockquote { font-family: $FontFamilyBody; }
+
+.ResponsiveContainer{
+    position: relative; 
+
+    .Fill{
+        width: 100%;
+        display: inline-block;
+        img{
+            width: 100%;
+            margin: 1rem 0 3rem;
+        }
+    }
+    
+
+
+        h1{ 
+            font-size: 2.10rem; 
+            font-family: $FontFamilyHeaderBold; 
+            line-height: 2.6rem;
+        }
+        h2{ font-size: 1.1rem;}
+ 
+        p{ font-size: 1rem;     margin: 15px 0;}
+
+        .ClientDetails{
+            position: absolute;
+            top:0;
+            right: 0;
+            border-top:1px dotted #DCDCDC; 
+            border-bottom: 1px dotted #DCDCDC;
+            padding: 5px 0 15px;
+            width: 15%;
+            z-index: 1000;
+            span{
+                font-size: .8rem;
+                width: 100%;
+                display: inline-block;
+                margin: 0 0 10px 0;
+            }
+            img{
+              width: 100%;
+            }
+            @media only screen  and (min-width : 1024px) {
+                width: 12%;
+            }
+            @media only screen  and (min-width : 990px) and (max-width:1024){
+                width: 15%;
+            }
+            @media only screen  and (max-width : 768px) {
+               position: relative;
+               width: 100%;
+               margin: 10px 0;
+               img{ width: auto;}
+            }
+          }
+
+    
+   
+}
+
+/*
+ @media only screen  and (max-width : 768px) {
+        .BodyCopy{
+            padding: 0 3% 0 0;
+        }
+    }
+    */
+// Specific Type
+p.standfirst{
+    font-size: $standfirst !important;
+    line-height: $standfirstLineHeight  !important;
+    margin: 0 0 20px 0;
+}
+/*
+#Bottom{
+   
+   
+    .BodyCopy{
+        
+       
+        p{
+            font-weight: 100;
+            margin: 15px 0;
+         
+            a{
+                font-size: inherit;
+            }
+        }
+    }
+}
+*/
+
+p.cta{
+
+    text-align: center;
+    
+    margin: 2rem 0 0;
+    font-size: $PCTA;
+    line-height: $PCTA;
+
+    a{
+        //font-weight: bold;
+        color: $Color2; 
+        text-decoration: underline;
+    }
+}
+
+
+blockquote{position: absolute;
+    top: 0;
+    right: 0;
+    width: 22%;
+    padding: 0;
+    font-size: 1.2rem;
+    font-family: $FontFamilyHeaderRegular;
+    font-weight: 100 !important;
+    margin: 0;
+    border-bottom: 1px solid #D8D8D8;
+    padding-bottom: 20px;
+}
+
+blockquote::before{ 
+        content: open-quote;
+        font-size: 8rem;
+        color: $Color5;
+        position: absolute;
+        top: -10px;
+        left: -3px;
+        font-family: $FontFamilyHeaderBold;
+    }
+
+blockquote::after{ content: close-quote; display: none;}
+
+@media only screen  and (max-width:768px){
+        blockquote{
+            position: relative;
+            width: 100%;
+          
+            font-size: 1.2rem;
+            font-family: "Guardian Headline Regular";
+            font-weight: 100 !important;
+            margin: 60px 0 50px ;
+        }
+}
+
+
+
+
+a{ 
+    color: $Color6;  
+    text-decoration: underline;} 
+a:hover{text-decoration: none;}
+
+
+@each $name, $size in $Font-Size-LargeScreen{ 
+    #{$name} { font-size: $size; }
+}
+@each $name, $size in $Font-LineHeight-LargeScreen{
+    #{$name} { line-height: $size; }
+}
+@each $name, $size in $Font-Weigth-LargeScreen{
+    #{$name} { font-weight: $size; }
+}
+
+@media only screen  and (max-width : 1024px) {
+    p.cta{
+        padding: 2rem 3rem;
+    }
+}
+
+
+@media only screen  and (max-width : 568px) {
+    @each $name, $size in $Font-Size-SmallScreen{ 
+        #{$name} { font-size: $size; }
+    }
+    @each $name, $size in $Font-LineHeight-SmallScreen{
+        #{$name} { line-height: $size; }
+    }
+    @each $name, $size in $Font-Weigth-SmallScreen{
+        #{$name} { font-weight: $size; }
+    }
+
+    p.cta{  padding: 2rem 0rem; }
+
+}

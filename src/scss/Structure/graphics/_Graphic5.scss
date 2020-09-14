@@ -1,0 +1,51 @@
+
+#Graphic5{
+    margin:  0 ;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: stretch;
+    align-content: flex-start;
+
+    .GraphicItem.Slim{ flex-basis:  40%; justify-content: flex-end;}
+    .GraphicItem.Wide{ flex-basis: 60%; justify-content: flex-start;}
+    .GraphicItem{
+       
+        position: relative;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+    align-items: center;
+    align-content: center;
+        #MoveImage2{
+            z-index: 100;
+            display: block;
+            margin-top: 150px;
+           
+            img{
+                width: 100%;
+                margin: 0;
+                position: relative;
+                bottom: 0;
+                left: 0;
+                right: 0%;
+                z-index: 100;
+            }
+        }
+
+        #StaticImage2{
+            margin-top: 0px;
+            z-index: 50;
+            display: block;
+            
+            img{
+                width: 100%;
+                margin: 0;
+                position: relative;
+            }
+        }
+    }
+    
+}

@@ -1,0 +1,33 @@
+
+#Graphic4{
+    margin: 0 -2rem 2rem 5rem;
+    overflow: hidden;
+    float: right;
+    width: 20%;
+    .GraphicItem{
+        margin: 5px 0;
+        img{
+            width: 100%;
+        }
+    }
+    p{
+        font-size: 10px;
+        line-height: 0.9rem;
+        margin: 0;
+    }
+}
+ 
+.Desktop{ display: block;}
+.Mobile{display: none;}
+
+@media only screen   and (min-width:320px)and (max-width:768px){
+    .Desktop{ display: none;}
+    .Mobile{display: block;     margin: 40px 0;}
+    
+        #Graphic4{
+        float: none;
+        margin: 0;
+        width: 100%;
+        }
+
+} 

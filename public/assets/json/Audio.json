@@ -1,0 +1,29 @@
+{
+    "Audio": [
+        {
+            "title": "What is the future for this device",
+            "description": "",
+            "mp3": "https://gdn-cdn.s3.amazonaws.com/embed/2020/07/WestpackAudio/assets/audio/The_Guardian_Westpac_BLUE_200717_02.mp3"
+        },{
+            "title": "What is the Stentrode",
+            "description": "",
+            "mp3": "https://gdn-cdn.s3.amazonaws.com/embed/2020/07/WestpackAudio/assets/audio/The_Guardian_Westpac_GREEN_200717_02.mp3"
+        },{
+            "title": "How does it work",
+            "description": "", 
+            "mp3": "https://gdn-cdn.s3.amazonaws.com/embed/2020/07/WestpackAudio/assets/audio/The_Guardian_Westpac_PINK_200717_02.mp3"
+        },{
+            "title": "Why funding this research is so important",
+            "description": "",
+            "mp3": "https://gdn-cdn.s3.amazonaws.com/embed/2020/07/WestpackAudio/assets/audio/The_Guardian_Westpac_RED_200717_02.mp3"
+        },{
+            "title": "You read my mind:",
+            "description": "Listen to the full interview with Associate Professor Nicholas Opie",
+            "mp3": "https://gdn-cdn.s3.amazonaws.com/embed/2020/07/WestpackAudio/assets/audio/The_Guardian_Westpac_FULL_LENGTH_200717_02.mp3"
+        },{
+            "title": "Volume on:",
+            "description": "What's your favourite movie theme song of all time?",
+            "mp3": "https://gdn-cdn.s3.amazonaws.com/embed/2020/07/WestpackAudio/assets/audio/Iconic_Theme_Songs_VoxPop.mp3"
+        }
+]
+}

@@ -1,0 +1,44 @@
+
+#Graphic3{
+    margin: 2rem 0 ;
+  
+    .InnerGraphic{
+
+            p{
+                color: #fff;
+                text-shadow: 0px 1px 7px #21364A;
+                font-size: 2rem;
+                width: 50%;
+                margin: 10% 25%;
+                text-align: center;
+                line-height: 2.5rem;
+                font-family: $FontFamilyHeaderBold;
+            }
+           p::before{ 
+                content: open-quote;
+              
+                font-family: $FontFamilyHeaderBold;
+            }
+        
+        p::after{ content: close-quote; }
+    }
+    @media only screen   and (min-width:1400px){
+        .InnerGraphic{
+
+            p{
+           
+                margin: 5% 25%;
+             
+            }
+        }
+    }
+    @media only screen   and (min-width:320px)and (max-width:576px){
+        .InnerGraphic{
+
+            p{
+                width: 80%;
+                margin: 20% 10%;
+            }
+        }
+    }
+}

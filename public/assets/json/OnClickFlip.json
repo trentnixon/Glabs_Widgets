@@ -1,0 +1,16 @@
+{
+    "FlipCard": {
+        "CardFront": {
+            "Image":"https://gdn-cdn.s3.amazonaws.com/embed/2020/03/GlabsWidgets/assets/images/flipcardFront.jpg",
+            "Copy":"This is some copy"
+        },
+        "CardBack": {
+            "Header1":"Header1",
+            "Header2":"Header2",
+            "Header3":"Header3",
+            "Copy":"More Copy for the back More Copy for the back More Copy for the back <a href=\"#\">More Copy for the back</a> More Copy for the back More Copy for the back More Copy for the back More Copy for the back More Copy for the backMore Copy for the back More Copy for the back <ul><li>item</li><li>item</li><li>item</li></ul>More Copy for the backMore Copy for the backMore Copy for the back",
+            "MetaCopy":"Return Here"
+        }
+      
+    }
+}

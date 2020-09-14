@@ -1,0 +1,121 @@
+.Audio{
+
+    display: flex;
+    flex-direction:row;
+    flex-wrap: nowrap; 
+    justify-content: center;
+    align-items: stretch ;
+    align-content:center;  
+    padding: .5rem; 
+    background-color: #f1f1f1;
+
+    .Loading{
+        position: absolute;
+        padding: 0;
+        width: 100%;
+        top: 0;
+        background-color: rgba(0, 0, 0, 0.3);
+        height: 100%;
+        justify-content: center;
+        display: flex;
+        align-items: center;
+        align-content: center;
+        color: #fff;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        font-size: 16px;
+        animation: fadeIn ease 1s;
+    }
+
+    .Meta{
+      
+
+        flex-basis: 70%;
+        h1{
+            display: flex;
+            justify-content: flex-start;
+            align-items: center ;
+            align-content:center; 
+            flex-direction: row;
+            .AudioIcon{
+                width: 25px;
+                border-radius: 100px;
+                margin-right: 2px;
+            }
+            .AudioIcon.pulse{
+                animation: pulse 2s infinite;
+            }
+            text-align: left;
+            margin: 0 0 .5rem 0 ;
+            padding: 0;
+            font-size: 1.25rem;
+            line-height: 1.5rem;
+        }
+        p{
+            text-align: left;
+            margin: 0;
+            font-size: 0.8rem;
+            line-height: 1.2rem;
+        }
+    }
+ 
+    .Player{
+        flex-basis: 30%;
+        .controls{
+            display: flex;
+            flex-direction:row;
+            flex-wrap: nowrap;
+            justify-content: flex-end;
+            align-items: stretch ;
+            align-content:center;
+            button{
+                padding: 0;
+                width: auto;
+                margin: 0;
+                cursor: pointer;
+                border: none;
+                background-color: transparent;
+                outline:none;
+                .st0{fill:#131A1C;}
+                .st1{fill:#FFFFFF;}
+                .st2{fill:#69D1CA;}
+
+                svg{
+                    width: 4em;
+                    height: 4em;
+                    float: right;
+                }
+            }
+            button:hover{
+                .st0{fill:#69D1CA;}
+            }
+        }
+    }
+}
+@media only screen  and (max-width : 568px) {
+    .Audio .Player .controls button svg{
+        width: 3.5em;
+    }
+}
+
+@keyframes pulse {
+	0% {
+		transform: scale(0.95);
+		box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.4);
+	}
+
+	70% {
+		transform: scale(1);
+		box-shadow: 0px 0 0px 3px rgba(0, 0, 0, 0);
+	}
+
+	100% {
+		transform: scale(0.95);
+		box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+	}
+}
+
+@keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+    }

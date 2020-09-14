@@ -1,0 +1,15 @@
+{
+    "GalleryMasonary": {
+        "Title":"This is some copy",
+        "images": [
+            "https://gdn-cdn.s3.amazonaws.com/embed/2019/10/skoda/assets/gallery/WildvvsMild_BarringtonTops_CREDIT_DominicLoneragan_021119_0089.jpg",
+            "https://gdn-cdn.s3.amazonaws.com/embed/2019/10/skoda/assets/gallery/WildvvsMild_BarringtonTops_CREDIT_DominicLoneragan_021119_0019.jpg",
+            "https://gdn-cdn.s3.amazonaws.com/embed/2019/10/skoda/assets/gallery/WildvvsMild_BarringtonTops_CREDIT_DominicLoneragan_021119_0054.jpg",
+            "https://gdn-cdn.s3.amazonaws.com/embed/2019/10/skoda/assets/gallery/WildvvsMild_BarringtonTops_CREDIT_DominicLoneragan_021119_0037.jpg", 
+            "https://gdn-cdn.s3.amazonaws.com/embed/2019/10/skoda/assets/gallery/WildvvsMild_BarringtonTops_CREDIT_DominicLoneragan_021119_0052.jpg",
+            "https://gdn-cdn.s3.amazonaws.com/embed/2019/10/skoda/assets/gallery/WildvvsMild_BarringtonTops_CREDIT_DominicLoneragan_021119_0022.jpg",
+            "https://gdn-cdn.s3.amazonaws.com/embed/2019/10/skoda/assets/gallery/WildvvsMild_BarringtonTops_CREDIT_DominicLoneragan_031119_0092.jpg",
+            "https://gdn-cdn.s3.amazonaws.com/embed/2019/10/skoda/assets/gallery/WildvvsMild_BarringtonTops_CREDIT_DominicLoneragan_021119_0065.jpg"
+        ]
+    }
+}

@@ -1,0 +1,25 @@
+.DefaultGraphic{
+   
+    div{
+        background-color: red;
+        padding: 20px;
+        text-align: center;
+        font-size: 3rem;
+        margin: 20px 0  !important;;
+    }
+}
+
+.ReactGridGallery{
+
+    display: inline-block;
+    width: 100%;
+
+}
+
+#Graphic2{
+    margin: 1rem 0 ;
+    overflow: hidden;
+    img{
+        width: 100%;
+    }
+}

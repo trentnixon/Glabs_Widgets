@@ -1,0 +1,77 @@
+
+// Graphic 
+#Graphic1{
+    margin: 1rem 0 0rem;
+    padding: 10px 0 50px;
+    @include FullScreenBreakPoints;
+    position: relative;
+
+    >div{
+        width: 100% !important;
+    }
+    div:nth-child(1) > div:nth-child(2) > div > ul:nth-child(2){
+        display: none;
+    }
+
+    .events-wrapper{
+        margin: 0 !important;
+     
+        .events-bar{
+            color: #fff;
+            text-indent: -999999px;
+        }
+    }
+
+    .buttons{
+        display: none;
+    }
+
+    .ButtonGroup{
+        position: absolute;
+  
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        width: 96%;
+        justify-content: space-between;
+        top: 45vh;
+        z-index: 1000;
+        
+        padding: 0 2%;
+
+        button{
+            background-color: #fff;
+            border: 1px solid white;
+            border-radius: 100px;
+            width: 50px;
+            height: 50px;
+            cursor: pointer;
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-size: 25px;
+            text-indent: -9999999px;
+            outline: 0;
+
+        }
+        button:active, button:hover{
+            background-color:  $Color6;
+            border: 1px solid  $Color6;
+            
+        }
+        .prev{
+            background-image: url('https://gdn-cdn.s3.amazonaws.com/embed/2019/10/opsm/assets/images/PrevArrow.svg');
+        }
+        .next{
+            background-image: url('https://gdn-cdn.s3.amazonaws.com/embed/2019/10/opsm/assets/images/NextArrow.svg');
+        }
+    }
+
+    @media only screen and (max-width:768px){
+    
+        .ButtonGroup{
+            display: none !important;
+        }
+    }
+    }
+
+  

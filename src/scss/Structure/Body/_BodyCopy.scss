@@ -1,0 +1,23 @@
+.GlabsContainer{
+    @include FlexBoxBasic( $direction:column ,$justify:center,$items:center,$content:flex-start);
+   overflow: hidden;
+    .ResponsiveContainer{
+        @include BreakPoints;
+       
+            .Full{
+                @include FullScreenBreakPoints;
+            }
+
+            .Gallery{
+                margin-bottom: 50px;}
+                
+            @media only screen  and (min-width : 768px) {
+                margin-top: 20px;
+            }
+        } 
+}
+
+#FooterContainer{
+    border-top: 1px solid #D8D8D8;
+    background-color: #fff;
+}    
